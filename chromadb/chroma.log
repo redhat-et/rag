@@ -1,0 +1,51 @@
+[32mINFO[0m:     [06-09-2024 13:20:50] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [06-09-2024 13:20:50] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [06-09-2024 13:20:50] Starting component System
+[36mDEBUG[0m:    [06-09-2024 13:20:50] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [06-09-2024 13:20:50] Starting component SqliteDB
+[36mDEBUG[0m:    [06-09-2024 13:20:50] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [06-09-2024 13:20:50] Starting component Posthog
+[36mDEBUG[0m:    [06-09-2024 13:20:50] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [06-09-2024 13:20:50] Starting component SegmentAPI
+[32mINFO[0m:     [06-09-2024 13:20:50] Started server process [[36m93912[0m]
+[32mINFO[0m:     [06-09-2024 13:20:50] Waiting for application startup.
+[32mINFO[0m:     [06-09-2024 13:20:50] Application startup complete.
+[32mINFO[0m:     [06-09-2024 13:20:50] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [06-09-2024 13:25:57] ::1:58985 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-09-2024 13:25:57] ::1:58985 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [06-09-2024 19:52:25] Shutting down
+[32mINFO[0m:     [06-09-2024 19:52:25] Waiting for application shutdown.
+[36mDEBUG[0m:    [06-09-2024 19:52:25] Stopping component System
+[36mDEBUG[0m:    [06-09-2024 19:52:25] Stopping component SegmentAPI
+[36mDEBUG[0m:    [06-09-2024 19:52:25] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [06-09-2024 19:52:25] Stopping component Posthog
+[36mDEBUG[0m:    [06-09-2024 19:52:25] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [06-09-2024 19:52:25] Stopping component SqliteDB
+[36mDEBUG[0m:    [06-09-2024 19:52:25] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [06-09-2024 19:52:25] Application shutdown complete.
+[32mINFO[0m:     [06-09-2024 19:52:25] Finished server process [[36m93912[0m]
+[32mINFO[0m:     [06-09-2024 19:52:28] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [06-09-2024 19:52:28] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [06-09-2024 19:52:28] Starting component System
+[36mDEBUG[0m:    [06-09-2024 19:52:28] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [06-09-2024 19:52:28] Starting component SqliteDB
+[36mDEBUG[0m:    [06-09-2024 19:52:28] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [06-09-2024 19:52:28] Starting component Posthog
+[36mDEBUG[0m:    [06-09-2024 19:52:28] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [06-09-2024 19:52:28] Starting component SegmentAPI
+[32mINFO[0m:     [06-09-2024 19:52:28] Started server process [[36m99645[0m]
+[32mINFO[0m:     [06-09-2024 19:52:28] Waiting for application startup.
+[32mINFO[0m:     [06-09-2024 19:52:28] Application startup complete.
+[32mINFO[0m:     [06-09-2024 19:52:28] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [06-09-2024 20:40:10] ::1:63734 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [06-09-2024 21:56:32] Shutting down
+[32mINFO[0m:     [06-09-2024 21:56:32] Waiting for application shutdown.
+[36mDEBUG[0m:    [06-09-2024 21:56:32] Stopping component System
+[36mDEBUG[0m:    [06-09-2024 21:56:32] Stopping component SegmentAPI
+[36mDEBUG[0m:    [06-09-2024 21:56:32] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [06-09-2024 21:56:32] Stopping component Posthog
+[36mDEBUG[0m:    [06-09-2024 21:56:32] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [06-09-2024 21:56:32] Stopping component SqliteDB
+[36mDEBUG[0m:    [06-09-2024 21:56:32] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [06-09-2024 21:56:32] Application shutdown complete.
+[32mINFO[0m:     [06-09-2024 21:56:32] Finished server process [[36m99645[0m]

@@ -1,0 +1,5 @@
+# pdf-input/*.pdf # these are 10k listings, they can be included
+# pdf-output/*.md # docling has been opensourced, we can share results
+# pdf-output/*.json # docling has been opensourced, we can share results
+venv
+chroma.log
