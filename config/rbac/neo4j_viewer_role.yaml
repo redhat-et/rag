@@ -1,0 +1,23 @@
+# permissions for end users to view neo4js.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: rag
+    app.kubernetes.io/managed-by: kustomize
+  name: neo4j-viewer-role
+rules:
+- apiGroups:
+  - rag.opendatahub.io
+  resources:
+  - neo4js
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - rag.opendatahub.io
+  resources:
+  - neo4js/status
+  verbs:
+  - get

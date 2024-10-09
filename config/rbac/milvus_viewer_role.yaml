@@ -1,0 +1,23 @@
+# permissions for end users to view milvuses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: rag
+    app.kubernetes.io/managed-by: kustomize
+  name: milvus-viewer-role
+rules:
+- apiGroups:
+  - rag.opendatahub.io
+  resources:
+  - milvuses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - rag.opendatahub.io
+  resources:
+  - milvuses/status
+  verbs:
+  - get

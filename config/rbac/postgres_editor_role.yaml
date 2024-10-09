@@ -1,0 +1,27 @@
+# permissions for end users to edit postgres.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: rag
+    app.kubernetes.io/managed-by: kustomize
+  name: postgres-editor-role
+rules:
+- apiGroups:
+  - rag.opendatahub.io
+  resources:
+  - postgres
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - rag.opendatahub.io
+  resources:
+  - postgres/status
+  verbs:
+  - get

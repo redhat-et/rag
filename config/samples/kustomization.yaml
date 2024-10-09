@@ -1,0 +1,6 @@
+## Append samples of your project ##
+resources:
+- rag_v1alpha1_milvus.yaml
+- rag_v1alpha1_postgres.yaml
+- rag_v1alpha1_neo4j.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

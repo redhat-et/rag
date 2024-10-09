@@ -1,0 +1,9 @@
+apiVersion: rag.opendatahub.io/v1alpha1
+kind: Neo4j
+metadata:
+  labels:
+    app.kubernetes.io/name: rag
+    app.kubernetes.io/managed-by: kustomize
+  name: neo4j-sample
+spec:
+  # TODO(user): Add fields here
