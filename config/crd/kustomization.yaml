@@ -5,6 +5,7 @@ resources:
 - bases/rag.opendatahub.io_milvuses.yaml
 - bases/rag.opendatahub.io_postgres.yaml
 - bases/rag.opendatahub.io_neo4js.yaml
+- bases/rag.opendatahub.io_elasticsearches.yaml
 #+kubebuilder:scaffold:crdkustomizeresource
 
 patches:
@@ -17,6 +18,7 @@ patches:
 #- path: patches/cainjection_in_milvuses.yaml
 #- path: patches/cainjection_in_postgres.yaml
 #- path: patches/cainjection_in_neo4js.yaml
+#- path: patches/cainjection_in_elasticsearches.yaml
 #+kubebuilder:scaffold:crdkustomizecainjectionpatch
 
 # [WEBHOOK] To enable webhook, uncomment the following section

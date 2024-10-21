@@ -29,26 +29,26 @@ import (
 	ragv1alpha1 "github.com/redhat-et/rag/api/v1alpha1"
 )
 
-// Neo4jReconciler reconciles a Neo4j object
-type PostgresReconciler struct {
+// ElasticsearchReconciler reconciles a Elasticsearch object
+type ElasticsearchReconciler struct {
 	client.Client
 	Scheme *runtime.Scheme
 }
 
-//+kubebuilder:rbac:groups=rag.opendatahub.io,resources=neo4js,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=rag.opendatahub.io,resources=neo4js/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=rag.opendatahub.io,resources=neo4js/finalizers,verbs=update
+//+kubebuilder:rbac:groups=rag.opendatahub.io,resources=elasticsearches,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=rag.opendatahub.io,resources=elasticsearches/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=rag.opendatahub.io,resources=elasticsearches/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.
 // TODO(user): Modify the Reconcile function to compare the state specified by
-// the Neo4j object against the actual cluster state, and then
+// the Elasticsearch object against the actual cluster state, and then
 // perform operations to make the cluster state reflect the state specified by
 // the user.
 //
 // For more details, check Reconcile and its Result here:
 // - https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.17.3/pkg/reconcile
-func (r *PostgresReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
+func (r *ElasticsearchReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	logger := log.FromContext(ctx)
 
 	// check if deployment exists if not create it
@@ -91,12 +91,13 @@ func (r *PostgresReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 			return ctrl.Result{}, err
 		}
 	}
+
 	return ctrl.Result{}, nil
 }
 
 // SetupWithManager sets up the controller with the Manager.
-func (r *PostgresReconciler) SetupWithManager(mgr ctrl.Manager) error {
+func (r *ElasticsearchReconciler) SetupWithManager(mgr ctrl.Manager) error {
 	return ctrl.NewControllerManagedBy(mgr).
-		For(&ragv1alpha1.Neo4j{}).
+		For(&ragv1alpha1.Elasticsearch{}).
 		Complete(r)
 }
